@@ -1,0 +1,52 @@
+        body {
+            padding-top: 56px;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+        }
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+        .product-card {
+            margin-bottom: 1.5rem;
+            border: 1px solid #dee2e6;
+            border-radius: 0.5rem;
+            transition: transform 0.2s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 0.5rem 0;
+        }
+        .jumbotron {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-primary {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .btn-primary:hover {
+            background-color: #004085;
+            border-color: #004085;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 1rem 0;
+        }
+        @media (max-width: 600px) {
+            .cart-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .cart-item > div {
+                margin-bottom: 0.5rem;
+            }
